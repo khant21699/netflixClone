@@ -1,0 +1,107 @@
+.movieScreen {
+  height: 100vh;
+  display: flex;
+}
+.movieImg {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.movieImg > img {
+  width: 40%;
+  max-width: 200px;
+  object-fit: cover;
+  border: 2px solid #e50914;
+}
+.movieScreen__details {
+  box-sizing: border-box;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.movieScreen__detail {
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 0 40px;
+}
+.movieScreen_container {
+  background-color: rgba(0, 0, 0, 0.33);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.movieScreen__details__text {
+  padding-top: 30%;
+  color: white;
+  padding-left: 80px;
+  overflow: hidden;
+}
+.movieScreen__details__text > h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.movieScreen__details__text > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.movieScreen__detail > h2 {
+  margin: 10px 0;
+}
+.movieScreen__notFound {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 60px;
+  font-weight: 800;
+}
+.movieScreen__backbtn {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #e50914;
+}
+.movieScreen__detail > p {
+  height: 100px;
+  overflow: scroll;
+}
+.movieScreen__detail > p::-webkit-scrollbar {
+  display: none;
+}
+.movieScreen__detail > ul {
+  max-height: 50px;
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+}
+.movieScreen__detail > ul > li {
+  margin-right: 30px;
+}
+.movieScreen__addToListbtn {
+  margin-left: 30px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #e50914;
+}
+.movieScreen__addToListbtn.listed {
+  display: none;
+}

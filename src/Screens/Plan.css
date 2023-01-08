@@ -1,0 +1,31 @@
+.planScreen__plan > button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+.current__plan > .current {
+  background-color: gray;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.planScreen__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.planScreen {
+  width: 100%;
+}
+.planScreen__plan > h4 {
+  margin-right: 10rem;
+}
+.planScreen > h4 {
+  margin: 20px 0;
+}

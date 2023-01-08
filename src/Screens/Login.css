@@ -1,0 +1,86 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xl.jpg")
+    center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.loginScreen::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+.loginScreen__top {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+.loginScreen__img {
+  left: 0;
+  width: 150px;
+  padding: 20px;
+}
+.signin__button {
+  margin: 20px;
+
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.loginScreen__body {
+  box-sizing: border-box;
+  padding-top: 150px;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  color: white;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3rem;
+  padding: 0 20px;
+}
+.loginScreen__body > h3 {
+  padding-bottom: 20px;
+}
+.loginscreen__input > form {
+  width: 100%;
+  overflow: none;
+  display: flex;
+  justify-content: center;
+}
+.loginscreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 50px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+.loginScreen__button {
+  height: 100%;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
