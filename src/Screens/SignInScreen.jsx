@@ -24,7 +24,8 @@ const SignInScreen = () => {
         console.log(userCredential);
       })
       .catch((error) => {
-        alert(error.message);
+        console.log(error.message);
+        emailRef.current.focus();
       });
   };
 
@@ -41,7 +42,8 @@ const SignInScreen = () => {
         // ...
       })
       .catch((error) => {
-        alert(error.message);
+        console.log(error.message);
+        register(e);
       });
   };
   return (

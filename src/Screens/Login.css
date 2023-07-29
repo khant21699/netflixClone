@@ -84,3 +84,48 @@
   cursor: pointer;
   font-weight: 600;
 }
+.InitialPage {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xl.jpg")
+    center no-repeat;
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 50%;
+  aspect-ratio: 1;
+  z-index: 999;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.InitialPage::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(
+    10px
+  ); /* This will only be applied in supporting browsers */
+}
+.alertPng {
+  width: 70px;
+  aspect-ratio: 1;
+}
+.OkButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.OkButton:hover {
+  border: 1px solid white;
+}
